@@ -7,10 +7,3 @@ services :
       dockerfile: Dockerfile
     ports:
       - "1020:1020"
-    environment :
-      DBUSER: ${DBUSER}
-      DBPASS: ${DBPASS}
-      JDBCCONN: ${JDBCCONN}
-      HTTPS_PROXY: ${HTTPS_PROXY}
-      DBCONN: ${DBCONN}
-      DB_DNS: ${DB_DNS}
