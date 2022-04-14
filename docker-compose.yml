@@ -1,8 +1,10 @@
 version : "3.0"
 services :
   bank-zulfikar:
-    image : bank.zali
-    build : .
+    image : java/docker
+    build : 
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "1020:1020"
     environment :
